@@ -5,8 +5,8 @@ import '../style.css';
 const About = () => {
   return (
     <div style={{ padding: '20px' }}>
-      <h1>About Me</h1>
-      <h2>Mahsa Abbasian</h2>
+
+      <h1>About Me<h3>Mahsa Abbasian</h3></h1>
       <h3>Software Engineer</h3>
 
       <p>

@@ -1,74 +1,82 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import FileRenaming from './assignmentPython/FileRenaming';
+
 
 const PythonAssignments = () => {
   return (
     <div style={{ padding: '20px' }}>
-      <h1>Automate File Renaming with a Python GUI</h1>
+
+<h2>What is a Script?</h2>
+      <h3>General Definition:</h3>
       <p>
-        The goal of this script is to automate the process of renaming files in a specific
-        folder using a new naming pattern you provide.
+        A script is a file that contains a sequence of instructions written in a programming or
+        scripting language. It’s typically used to automate tasks, perform calculations, or
+        execute a specific sequence of operations.
+      </p>
+      <h3>Scripts vs. Programs:</h3>
+      <p>
+        In programming, the term "script" often refers to smaller, simpler programs designed to
+        automate tasks or run a specific routine, while a "program" might be a larger, more
+        complex piece of software.
       </p>
 
-      <h2>Here’s what it means:</h2>
-
-      <h3>Folder Path:</h3>
+      <h2>What is a Script in Python?</h2>
+      <h3>Python Script:</h3>
       <p>
-        You’ll specify a folder on your computer that contains files you want to rename.
-        For example, if you have a folder called <strong>VacationPhotos</strong> with files named
-        like <em>IMG001.jpg, IMG002.jpg</em>, etc., you’d input the path to this folder in the script.
+        A Python script is simply a file containing Python code, usually with a .py extension,
+        that can be executed by the Python interpreter.
       </p>
 
-      <h3>Renaming Pattern:</h3>
-      <p>
-        You provide a new name prefix (pattern) that you want to use for all files in that folder.
-        For instance, if you enter <strong>Vacation_2023</strong> as the prefix, the script will rename
-        each file in the folder to start with <strong>Vacation_2023</strong>, followed by a unique
-        number to avoid name conflicts.
-      </p>
-
-      <h3>Result:</h3>
-      <p>
-        The script goes through each file in the folder and renames it according to the new pattern
-        you provided. Using our example, if your folder has three photos, originally named
-        <em> IMG001.jpg, IMG002.jpg,</em> and <em>IMG003.jpg</em>, they will be renamed to
-        <em> Vacation_2023_1.jpg, Vacation_2023_2.jpg,</em> and <em>Vacation_2023_3.jpg</em>.
-      </p>
-
-      <h2>Example Walkthrough</h2>
-      <p>
-        Let’s say you want to rename all files in your folder named <em>Documents/Reports</em> so
-        they have the prefix <strong>Q3_Report</strong>.
-      </p>
-
-      <ol>
-        <li>Run the script. A small window (GUI) opens.</li>
-        <li>Browse to select your folder or type the path directly. You’d enter <em>Documents/Reports</em>.</li>
-        <li>Enter the new name prefix you want to use, such as <strong>Q3_Report</strong>.</li>
-        <li>Click the Rename button.</li>
-      </ol>
-
-      <p>
-        The script will rename every file in <em>Documents/Reports</em> to start with
-        <strong> Q3_Report</strong>, followed by a unique number for each file.
-      </p>
-
-      <h3>After running the script, you’ll see the files named as:</h3>
+      <h3>Examples of Python Scripts:</h3>
       <ul>
-        <li>Q3_Report_1.docx</li>
-        <li>Q3_Report_2.docx</li>
-        <li>Q3_Report_3.docx</li>
+        <li>Automating tasks, like renaming files or sending emails.</li>
+        <li>Performing data analysis or automating web scraping.</li>
+        <li>Running simple calculations or simulations.</li>
       </ul>
 
+      <h3>Structure:</h3>
       <p>
-        This automation can be helpful if you have a lot of files to rename in a consistent way
-        without manually doing each one!
+        A typical Python script might include imports, function definitions, and a main
+        execution block like this:
+      </p>
+      <pre className="code-block">
+        {`# example.py
+import math
+
+def calculate_area(radius):
+    return math.pi * radius ** 2
+
+if __name__ == "__main__":
+    print("Area of circle:", calculate_area(5))`}
+      </pre>
+      <p>
+        Here, the script imports a module (math), defines a function (calculate_area), and uses
+        the <code>if __name__ == "__main__"</code> block to run code only when the script is
+        executed directly.
       </p>
 
+      <h2>Why Use Scripts in Python?</h2>
+      <ul>
+        <li><strong>Automate Repetitive Tasks:</strong> Scripts are great for automating tasks you do frequently.</li>
+        <li><strong>Prototyping and Quick Solutions:</strong> Quickly write code to solve problems or test ideas.</li>
+        <li><strong>Data Analysis and Visualization:</strong> Used by data scientists for processing and analysis.</li>
+        <li><strong>Simplicity and Readability:</strong> Easy to write and understand, perfect for beginners and experts.</li>
+        <li><strong>System Administration:</strong> Automate system tasks like monitoring or managing files.</li>
+      </ul>
+
+      <h2>When to Use a Python Script:</h2>
+      <ul>
+        <li><strong>For Small to Medium Projects:</strong> Ideal for tasks that don’t need a full application.</li>
+        <li><strong>Automation:</strong> Great for automating repetitive tasks.</li>
+        <li><strong>Data Processing:</strong> Widely used for cleaning and transforming datasets.</li>
+        <li><strong>Learning and Experimentation:</strong> Excellent way to learn Python or test ideas.</li>
+      </ul>
+
       {/* Corrected Link Component */}
-      <Link to="/Assignment">
+      <Link to="/assignmentPython/FileRenaming">
         <div className="code-box">
-          Toward code explanation...
+          Toward File Renaming Assignment 
         </div>
       </Link>
     </div>
