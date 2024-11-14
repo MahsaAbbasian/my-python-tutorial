@@ -28,9 +28,12 @@ body {
   
   
   .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #1a1a40;
     color: #f0f0f0;
-    padding: 15px;
+    padding: 10px 20px;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     width: 100%; /* Make navbar full width */
@@ -43,8 +46,8 @@ body {
   .navbar a {
     color: #f0f0f0;
     text-decoration: none;
-    padding: 1%;;
     margin: 0 15px;
+    font-size: 1rem;
   }
   .navbar a:hover {
     color: #ff9800; /* Change to bright orange on hover */
@@ -227,6 +230,8 @@ strong {
   }
 
   .navbar {
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 10px;
     font-size: 0.9rem; /* Adjust font size for smaller screens */
   }
@@ -238,5 +243,35 @@ strong {
 
   .box {
     width: 100%; /* Make boxes full width */
+  }
+}
+/* Media query for small screens (e.g., mobile devices) */
+@media (max-width: 600px) {
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 15px; /* Reduce gap for smaller screens */
+  }
+
+  .box {
+    width: 100%; /* Make each box full width */
+  }
+
+  .navbar {
+    font-size: 0.8rem; /* Adjust the font size for small screens */
+    padding: 3px; /* Reduce padding */
+  }
+
+  .container {
+    padding: 15px; /* Reduce container padding */
+    margin: 15px auto; /* Adjust margin for better spacing */
+    max-width: 100%; /* Ensure the container takes full width */
+  }
+
+  h1, h2 {
+    font-size: 1.5rem; /* Adjust heading sizes */
+  }
+
+  p {
+    font-size: 0.9rem; /* Reduce paragraph font size */
   }
 }
