@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import FileRenaming from './pages/assignmentPython/FileRenaming';
+import FileConversion from './pages/assignmentPython/Conver_doc_to_pdf';
 import PythonAssignments from './pages/PythonAssignments'; // Import PythonAssignments
 import About from './pages/About'; // Make sure to import About
 import './style.css';
@@ -25,6 +26,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/assignmentPython/FileRenaming" element={<FileRenaming />} />
+            <Route path="/assignmentPython/convert_doc_to_pdf" element={<FileConversion/>} />
             <Route path="/PythonAssignments" element={<PythonAssignments />} />
             <Route path="/about" element={<About />} /> {/* Route for About Page */}
           </Routes>

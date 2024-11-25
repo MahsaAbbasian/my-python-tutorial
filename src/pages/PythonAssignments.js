@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import FileRenaming from './assignmentPython/FileRenaming';
+import FileConversion from './assignmentPython/Conver_doc_to_pdf'
 
 
 const PythonAssignments = () => {
@@ -72,13 +73,17 @@ if __name__ == "__main__":
         <li><strong>Data Processing:</strong> Widely used for cleaning and transforming datasets.</li>
         <li><strong>Learning and Experimentation:</strong> Excellent way to learn Python or test ideas.</li>
       </ul>
-
+      <h2>General Automation Related Section </h2>
       {/* Corrected Link Component */}
-      <Link to="/assignmentPython/FileRenaming">
-        <div className="code-box">
-          Toward File Renaming Assignment 
-        </div>
+      <div className="button-container">
+    
+      <Link to="/assignmentPython/FileRenaming" className="box">
+      Python script Toward File Renaming Assignment 
       </Link>
+      <Link to="/assignmentPython/convert_doc_to_pdf" className="box">        
+      Python script to convert a .doc file to a .pdf  Assignment        
+      </Link>
+      </div>
     </div>
   );
 };

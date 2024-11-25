@@ -399,7 +399,8 @@ rename_button.pack(pady=20)
       </p>  
       
       <p>
-        Check out the code on GitHub:
+      <h2>Check out the code on GitHub:</h2>
+      <h3>Link toward file_renamer.py file</h3>
         <a 
           href="https://github.com/MahsaAbbasian/python/blob/main/file_renamer.py" 
           target="_blank" 
